@@ -143,6 +143,15 @@ uint8_t InternetButton::allButtonsOn(){
     }
 }
 
+uint8_t InternetButton::anyButtonsOn(){
+    if(!digitalRead(b1) || !digitalRead(b2) || !digitalRead(b3) || !digitalRead(b4)) {
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
+
 uint8_t InternetButton::allButtonsOff(){
     if(digitalRead(b1) && digitalRead(b2) && digitalRead(b3) && digitalRead(b4)) {
         return 1;

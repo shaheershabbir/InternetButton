@@ -45,6 +45,7 @@ class InternetButton {
     buttonOn(uint8_t i),
     allButtonsOn(void),
     allButtonsOff(void),
+    anyButtonOn(void),
     lowestLed(void);
   int
     readX(void),
